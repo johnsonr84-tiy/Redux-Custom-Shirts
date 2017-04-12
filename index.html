@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="main.css" charset="utf-8"></script>
+    <title>Redux Brand Shirts</title>
+  </head>
+
+  <body>
+
+    <h1>CUSTOMIZE YOUR SHIRT OPTIONS BELOW</h1>
+
+<!-- ======================Catalog ========================  -->
+
+    <div id="catalog">
+      <h2>Shirt Style</h2>
+        <table>
+          <thead>
+            <td>ID</td>
+            <td>Color</td>
+            <td>Size</td>
+            <td>Motto</td>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+    </div>
+    <div id="quantity">
+      <h2>Shirt Quantity</h2>
+        <select name="shirtQuantity">
+          <option value="1">1</option>
+          <option value="1">2</option>
+          <option value="1">3</option>
+          <option value="1">4</option>
+          <option value="1">5</option>
+        </select>
+      <button type="button" name="button">Add</button>
+    </div>
+
+<!-- ======================Create Shirt=====================  -->
+
+    <div id="createShirt">
+        <h2>Create New Shirt Style</h2>
+          <div class="color">
+            <label for="color">Color: </label>
+            <select id="colorOptions">
+              <option value="white">white</option>
+              <option value="black">black</option>
+              <option value="blue">blue</option>
+              <option value="red">red</option>
+              <option value="grey">grey</option>
+              <option value="purple">purple</option>
+              <option value="khaki">khaki</option>
+            </select>
+          <button type="button" name="colorButton">Add</button>
+          </div>
+          <div class="size">
+            <label for="size">Size: </label>
+            <select id="size">
+              <option value="x-small">x-small</option>
+              <option value="small">small</option>
+              <option value="medium">medium</option>
+              <option value="large">large</option>
+              <option value="x-large">x-large</option>
+              <option value="xx-large">xx-large</option>
+              <option value="xxx-large">xxx-large</option>
+            </select>
+            <button type="button" name="sizeButton">Add</button>
+          </div>
+          <div class="motto">
+            <label for="motto">Motto: </label>
+            <input id="motto" type="text" value="">
+            <button type="button" name="mottoButton">Add</button>
+            <p>(limit to 50 characters or less)</p>
+          </div>
+
+<!-- ==============Remove Shirt===============  -->
+
+      <div id="removeShirt">
+        <h2>Remove Shirt Entry</h2>
+            <label for="id">ID: </label>
+            <input id="id" type="text" value="" />
+          </div>
+          <br />
+        <button type="button" id="removeButton">Remove Shirt Entry</button>
+      </div>
+
+
+    <script src="./dist/bundle.js" charset="utf-8"></script>
+  </body>
+</html>
