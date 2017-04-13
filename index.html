@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script src="main.css" charset="utf-8"></script>
+    <!-- <script src="main.css" charset="utf-8"></script> -->
     <title>Redux Brand Shirts</title>
   </head>
 
@@ -26,7 +26,7 @@
           </tbody>
         </table>
     </div>
-    <div id="quantity">
+    <!-- <div id="quantity">
       <h2>Shirt Quantity</h2>
         <select name="shirtQuantity">
           <option value="1">1</option>
@@ -36,15 +36,15 @@
           <option value="1">5</option>
         </select>
       <button type="button" name="button">Add</button>
-    </div>
+    </div> -->
 
 <!-- ======================Create Shirt=====================  -->
 
     <div id="createShirt">
         <h2>Create New Shirt Style</h2>
-          <div class="color">
+          <div id="colorOptions">
             <label for="color">Color: </label>
-            <select id="colorOptions">
+            <select id="color">
               <option value="white">white</option>
               <option value="black">black</option>
               <option value="blue">blue</option>
@@ -53,9 +53,8 @@
               <option value="purple">purple</option>
               <option value="khaki">khaki</option>
             </select>
-          <button type="button" name="colorButton">Add</button>
           </div>
-          <div class="size">
+          <div id="sizeOptions">
             <label for="size">Size: </label>
             <select id="size">
               <option value="x-small">x-small</option>
@@ -66,14 +65,14 @@
               <option value="xx-large">xx-large</option>
               <option value="xxx-large">xxx-large</option>
             </select>
-            <button type="button" name="sizeButton">Add</button>
           </div>
-          <div class="motto">
+          <div id="mottoOptions">
             <label for="motto">Motto: </label>
             <input id="motto" type="text" value="">
-            <button type="button" name="mottoButton">Add</button>
             <p>(limit to 50 characters or less)</p>
           </div>
+        <button id="createShirtButton" type="button">Add</button>
+      </div>
 
 <!-- ==============Remove Shirt===============  -->
 
